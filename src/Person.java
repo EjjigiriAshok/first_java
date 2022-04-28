@@ -1,4 +1,4 @@
-public class Person {
+ public class Person {
     private String name;
     private  String dateOfBirth;
     private String gender;
@@ -45,7 +45,7 @@ public class Person {
         this.bloodGroup = bloodGroup;
     }
 }
-public class Donor extends Person {
+ class Donor extends Person {
 
     private String bloodBankName;
     private String donorType;
@@ -92,26 +92,5 @@ public class Donor extends Person {
         Donor a = new Donor();
         a.setName("Ashok -- Donor");
         System.out.println(a.getName());
-    }
-}
-public class Main
-{
-    public static void main(String[] args) {
-
-        Scanner sc = new Scanner(System.in);
-
-        Donor a = new Donor();
-        System.out.println("Enter the name of the donor : ");
-        String input = sc.nextLine();
-        a.setName(input);
-
-        System.out.println(a.getName());
-
-        a.setDob("11-22-1223");
-        a.setMobile("9988877766");
-        a.setBloodGroup("A+");
-        a.setDonationDate("99-87-8766");
-
-        a.displayDonationDetails();
     }
 }
